@@ -1,9 +1,10 @@
 import { state } from "../../data/state.js"
 import { TABLE_CLASS_NAME } from "../../data/constants.js"
-import { BIN_ICON } from "../../data/constants.js"
+
 import { checkbox } from "./checkbox.js"
 import { dateInput } from "./date-input.js"
 import { textInput } from "./text-input.js"
+import { createRemoveButton } from './remove-button.js'
 
 export const createTable = () => {
     const tbodyEl = document.querySelector('tbody');
@@ -31,7 +32,8 @@ export const createTable = () => {
         tdDue.appendChild(dateInputEl)
 
         const tdRemove = trEl.lastElementChild
-        tdRemove.innerHTML = BIN_ICON
+        const removeBtnEl = createRemoveButton(tdRemove)
+        tdRemove.appendChild(removeBtnEl)
 
 
         tbodyEl.appendChild(trEl);
