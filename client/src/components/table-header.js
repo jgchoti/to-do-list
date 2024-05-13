@@ -1,7 +1,11 @@
 import { state } from "../../data/state.js"
 import { TABLE_HEAD_ID } from "../../data/constants.js"
+import { TABLE_CONTAINER_ID } from "../../data/constants.js"
+
 export const tableHeader = () => {
     const container = document.getElementById('root')
+    const tableContainer = document.createElement('div')
+    tableContainer.id = TABLE_CONTAINER_ID
     const tableEl = document.createElement('table')
     const theadEl = document.createElement('thead')
     const tbodyEl = document.createElement('tbody')
@@ -13,6 +17,7 @@ export const tableHeader = () => {
     }
     tableEl.appendChild(theadEl)
     tableEl.appendChild(tbodyEl)
-    container.appendChild(tableEl)
-    return tableEl
+    tableContainer.appendChild(tableEl)
+    container.appendChild(tableContainer)
+    return tableContainer
 }
