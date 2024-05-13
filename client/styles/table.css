@@ -1,0 +1,41 @@
+@import url('./constants.css');
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+thead #status {
+	border-top-left-radius: 10px;
+}
+
+thead #due {
+	border-top-right-radius: 10px;
+}
+th {
+	text-align: center;
+	background-color: var(--header-bg-color);
+	border: 1px solid var(--border-color);
+	padding: 8px;
+	color: var(--header-color);
+}
+
+td {
+	border: 1px solid var(--border-color);
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: var(--table-color-dark);
+}
+
+tr {
+	background-color: var(--table-color);
+}
+
+.status {
+	text-align: center;
+}
