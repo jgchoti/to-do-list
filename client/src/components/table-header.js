@@ -11,7 +11,7 @@ export const tableHeader = () => {
     const tbodyEl = document.createElement('tbody')
     for (const key in state) {
         const thEl = document.createElement('th')
-        thEl.innerHTML = key
+        thEl.innerHTML = `${key.toUpperCase()}`
         thEl.id = TABLE_HEAD_ID[key]
         theadEl.appendChild(thEl)
     }
