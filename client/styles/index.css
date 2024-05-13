@@ -1,7 +1,9 @@
 @import url('./other-file.css');
+@import url('./header.css');
 @import url('./table.css');
 @import url('./constants.css');
 @import url('./button.css');
+
 body {
 	background-color: var(--background-color);
 }
