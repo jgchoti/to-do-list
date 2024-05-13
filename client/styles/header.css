@@ -1,0 +1,10 @@
+@import url('./constants.css');
+
+h1 {
+	color: var(--font-color);
+	font-family: var(--font-family-head);
+	font-size: 32px;
+	letter-spacing: 6px;
+	margin-top: 8px;
+	margin-left: 18px;
+}
