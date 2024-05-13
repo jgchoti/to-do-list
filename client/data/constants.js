@@ -18,6 +18,7 @@ export const TABLE_CLASS_NAME = {
     'due': 'due',
     'remove': 'remove'
 }
+export const REMOVE_BTN_CLASS = 'remove-btn'
 // ... other things?
 export const TEXT_HEADER = 'TO-DO LIST'
 export const BIN_ICON = '<i class="fa-solid fa-trash-can"></i>'
