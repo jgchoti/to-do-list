@@ -4,11 +4,11 @@
 	--header-bg-color: #f9d6d6;
 	--background-color: #f7f1e2;
 	--table-color: #f9f3eb;
-	--table-color-dark: #e5ddc5;
+	--table-color-dark: #e5d8c6;
 	--table-bg-color: #fbf5e9c5;
 	--shadow-color: #0b1956;
-	--font-header-color: #0b1956;
+	--header-color: #0b1956;
 	--font-color: #205e94;
-	--font-head: 'Poetsen One', 'sans-serif';
-	--font-text: 'Kanit', sans-serif;
+	--font-family-head: 'Poetsen One', 'sans-serif';
+	--font-family-text: 'Kanit', sans-serif;
 }
