@@ -8,7 +8,7 @@ import { textInput } from "./text-input.js"
 export const createTable = () => {
     const tbodyEl = document.querySelector('tbody');
 
-    const taskItems = state['Task'];
+    const taskItems = state['task'];
 
     for (const item of taskItems) {
         const trEl = document.createElement('tr');
