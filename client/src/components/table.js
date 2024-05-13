@@ -1,7 +1,9 @@
 import { state } from "../../data/state.js"
 import { TABLE_CLASS_NAME } from "../../data/constants.js"
+import { BIN_ICON } from "../../data/constants.js"
 import { checkbox } from "./checkbox.js"
 import { dateInput } from "./date-input.js"
+import { textInput } from "./text-input.js"
 
 export const createTable = () => {
     const tbodyEl = document.querySelector('tbody');
@@ -21,11 +23,16 @@ export const createTable = () => {
         tdStatus.appendChild(checkboxEl)
 
         const tdTask = trEl.children[1]
-        tdTask.innerHTML = item
+        const textEl = textInput(item)
+        tdTask.appendChild(textEl)
 
         const tdDue = trEl.children[2]
         const dateInputEl = dateInput()
         tdDue.appendChild(dateInputEl)
+
+        const tdRemove = trEl.lastElementChild
+        tdRemove.innerHTML = BIN_ICON
+
 
         tbodyEl.appendChild(trEl);
     }
