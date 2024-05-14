@@ -5,3 +5,9 @@
 	font-style: italic;
 	text-decoration-color: var(--bold-color);
 }
+
+input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+	accent-color: var(--bold-color);
+}
