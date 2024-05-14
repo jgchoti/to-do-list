@@ -56,3 +56,23 @@ tr {
 	box-shadow: 15px 10px var(--shadow-color);
 	border: 3px solid var(--shadow-color);
 }
+
+@media only screen and (max-width: 600px) {
+	th,
+	td {
+		padding: 2px;
+	}
+	#table-container {
+		padding: 10px;
+		margin: 30px auto;
+		border-radius: 35px;
+		box-shadow: 5px 10px var(--shadow-color);
+	}
+	tr {
+		font-size: 14px;
+	}
+	#due-id,
+	.due {
+		display: none;
+	}
+}
