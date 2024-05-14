@@ -29,6 +29,13 @@ button:hover {
 	outline: 0;
 }
 
+button#new-list,
+button#save-btn,
+button#reset-btn {
+	display: inline;
+	margin-left: 2px;
+}
+
 button.remove-btn {
 	margin: 0 auto;
 	text-align: center;
