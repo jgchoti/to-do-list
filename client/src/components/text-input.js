@@ -1,6 +1,9 @@
-export const textInput = (text) => {
-    const pEl = document.createElement('p')
+export const textInput = (text, taskId) => {
+    const labelEl = document.createElement('label');
+    const pEl = document.createElement('p');
     pEl.innerText = text;
-    pEl.setAttribute('contenteditable', 'true')
-    return pEl;
-}
+    pEl.setAttribute('contenteditable', 'true');
+    labelEl.setAttribute('for', taskId);
+    labelEl.appendChild(pEl);
+    return labelEl;
+};
