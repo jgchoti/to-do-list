@@ -1,4 +1,4 @@
-import { state } from "../../data/state.js"
+import { NEW_TASK } from "../../data/constants.js"
 import { TABLE_HEAD_ID } from "../../data/constants.js"
 import { TABLE_CONTAINER_ID } from "../../data/constants.js"
 
@@ -9,7 +9,8 @@ export const tableHeader = () => {
     const tableEl = document.createElement('table')
     const theadEl = document.createElement('thead')
     const tbodyEl = document.createElement('tbody')
-    for (const key in state) {
+    tbodyEl.id = 'todo-table'
+    for (const key in NEW_TASK) {
         const thEl = document.createElement('th')
         thEl.innerHTML = `${key.toUpperCase()}`
         thEl.id = TABLE_HEAD_ID[key]
