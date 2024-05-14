@@ -1,5 +1,11 @@
-export const checkbox = () => {
+import { checkedListeners } from "../listeners/checked-listeners.js";
+
+export const checkbox = (id) => {
     const checkboxEl = document.createElement('input')
-    checkboxEl.type = 'checkbox';
+    const element = 'checkbox'
+    checkboxEl.type = element
+    checkboxEl.id = id
+    checkboxEl.value = id
+    checkedListeners(checkboxEl)
     return checkboxEl;
 }
