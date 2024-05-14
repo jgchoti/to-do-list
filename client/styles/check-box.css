@@ -1,0 +1,7 @@
+@import url('./constants.css');
+
+.checked-label {
+	text-decoration: line-through;
+	font-style: italic;
+	text-decoration-color: var(--bold-color);
+}
