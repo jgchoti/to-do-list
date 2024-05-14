@@ -1,5 +1,6 @@
 // event types
 export const CLICK = 'click'
+export const CHANGE = 'change'
 // IDs
 export const TABLE_HEAD_ID = {
     'status': 'status-id',
