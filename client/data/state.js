@@ -1,4 +1,3 @@
-import { BIN_ICON } from './constants.js'
 
 export const state = {
     'status': [''],
@@ -6,3 +5,5 @@ export const state = {
     'due': [''],
     'remove': ['']
 };
+
+export const index = {};
