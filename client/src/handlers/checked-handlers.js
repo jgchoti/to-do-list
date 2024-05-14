@@ -1,7 +1,10 @@
-export const checkedHandlers = (checkboxEl) => {
+import { styleChange } from '../utils/style-change.js'
+export const checkedHandlers = (checkboxEl, textInputEl) => {
+    let isChecked = false
     if (checkboxEl.checked) {
-        console.log(`${checkboxEl.id} is checked..`);
+        isChecked = true
+        styleChange(textInputEl, isChecked)
     } else {
-        console.log(`${checkboxEl.id} is not checked..`);
+        styleChange(textInputEl, isChecked)
     }
 }
