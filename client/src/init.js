@@ -11,12 +11,16 @@ import { resetButton } from './components/reset-button.js'
 import { resetListeners } from './listeners/reset-listeners.js'
 import { createButtons } from './components/buttons.js'
 import { buttonsListeners } from './listeners/buttons-listeners.js'
+import { modal } from './components/modal.js'
+import { modalBtnListeners } from './listeners/modal-btn-listeners.js'
 
 tableHeader()
 header()
 loadList()
 createButtons()
 buttonsListeners()
+modal()
+modalBtnListeners()
 
 // newListButton()
 // saveButton()
