@@ -1,7 +1,5 @@
 import { BUTTONS } from "../../data/constants.js"
 
-
-
 export const createButtons = () => {
     const container = document.getElementById('table-container')
     for (const key in BUTTONS) {
