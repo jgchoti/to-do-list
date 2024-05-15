@@ -31,9 +31,16 @@ button:hover {
 
 button#new-list,
 button#save-btn,
-button#reset-btn {
+button#reset-btn,
+button#modal-add,
+button#modal-cancel {
 	display: inline;
 	margin-left: 2px;
+}
+
+button#modal-cancel {
+	color: var(--table-bg-color);
+	background-color: var(--shadow-color);
 }
 
 button.remove-btn {
