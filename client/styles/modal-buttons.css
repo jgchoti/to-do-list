@@ -1,0 +1,5 @@
+button#modal-add,
+button#modal-cancel {
+	display: inline;
+	margin-left: 2px;
+}
