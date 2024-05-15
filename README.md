@@ -4,6 +4,8 @@ Welcome to the To-Do List project! This application was developed as part of my
 studies with HackYourFuture Belgium, aimed at deepening my understanding of
 JavaScript.
 
+![screenshot](./client/public/Screenshot.png)
+
 ## Project Goals
 
 The primary goal of this project was to implement the following features:
