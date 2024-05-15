@@ -36,12 +36,16 @@ export const SAVE_ICON = '<i class="fa-solid fa-floppy-disk"></i>'
 export const RESET_ICON = '<i class="fa-solid fa-arrow-rotate-left"></i >'
 
 
-export const NEW_TASK = {
-    'status': [''],
-    'task': ['Click to Edit'],
-    'due': [''],
-    'remove': ['']
-};
+export const NEW_TASK = [
+    {
+        'status': false,
+        'task': 'Click to Edit',
+        'due': '',
+        'remove': ''
+    }
+]
+
+
 
 export const BUTTONS = {
     'new-list': '+ New',
@@ -54,3 +58,21 @@ export const BUTTONS_HANDLERS = {
     'save-btn': saveList,
     'reset-btn': reset
 };
+
+export const INPUT_MODEL = [
+    {
+        element: 'input',
+        text: "Task Title",
+        type: "text",
+        class: "form-model",
+        id: "textInput",
+
+    }, {
+        element: 'input',
+        text: "Due Date",
+        type: "date",
+        class: "form-model",
+        id: "dateInput",
+
+    },
+]
