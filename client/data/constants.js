@@ -1,9 +1,9 @@
 import { saveList } from '../../client/src/handlers/save-list.js';
 import { newListHandlers } from '../../client/src/handlers/new-list-handlers.js';
 import { reset } from '../../client/src/handlers/reset.js';
-
-
-// event types
+import { modalTaskHandler } from '../src/handlers/modal-task-handler.js'
+import { modalCancelHandler } from '../src/handlers/modal-cancel-handler.js'
+// event types 
 export const CLICK = 'click'
 export const CHANGE = 'change'
 // IDs
@@ -53,25 +53,38 @@ export const BUTTONS = {
     'reset-btn': '<i class="fa-solid fa-arrow-rotate-left"></i >'
 };
 
+
+export const MODAL_BUTTONS = {
+    'modal-add': '<i class="fa-solid fa-plus"></i>',
+    'modal-cancel': '<i class="fa-solid fa-xmark"></i>'
+};
+
+
 export const BUTTONS_HANDLERS = {
     'new-list': newListHandlers,
     'save-btn': saveList,
     'reset-btn': reset
 };
 
-export const INPUT_MODEL = [
+export const MODAL_BUTTONS_HANDLERS = {
+    'modal-add': modalTaskHandler,
+    'modal-cancel': modalCancelHandler,
+};
+
+
+export const INPUT_MODAL = [
     {
         element: 'input',
-        text: "Task Title",
+        text: "Task",
         type: "text",
-        class: "form-model",
+        className: "form-modal",
         id: "textInput",
 
     }, {
         element: 'input',
         text: "Due Date",
         type: "date",
-        class: "form-model",
+        className: "form-modal",
         id: "dateInput",
 
     },
