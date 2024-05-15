@@ -1,5 +1,6 @@
-import { createTable } from '../components/table.js';
-import { loadTable } from '../components/load-table.js';
+import { loadTable } from '../components/render-table.js';
+import { NEW_TASK } from '../../data/constants.js'
+
 export const loadList = () => {
     const storedList = JSON.parse(localStorage.getItem("todoList"));
 
@@ -7,6 +8,6 @@ export const loadList = () => {
         loadTable(storedList);
         console.log("Todo list loaded successfully!");
     } else {
-        createTable()
+        loadTable(NEW_TASK)
     }
 }
