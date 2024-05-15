@@ -1,0 +1,54 @@
+@import url(./constants.css);
+
+div #modal-body {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--shadow-color);
+	padding: 20px 40px;
+	background-color: var(--table-color-dark);
+	max-width: 1000px;
+	border-radius: 35px;
+	border: 3px solid var(--shadow-color);
+	opacity: 1;
+}
+
+form p,
+.form-modal {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+form p {
+	color: var(--font-color);
+	font-family: var(--font-family-head);
+}
+
+.form-modal {
+	margin-left: 10px;
+	color: var(--font-color);
+	font-family: var(--font-family-text);
+}
+
+#textInput {
+	max-width: 800px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+}
+
+@media screen {
+	div #modal-body {
+		top: 30%;
+	}
+}
