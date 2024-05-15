@@ -1,6 +1,5 @@
-import { NEW_TASK } from '../../data/constants.js'
-import { loadTable } from '../components/render-table.js'
-
+import { modalToggle } from "./modal-toggle.js"
 export const newListHandlers = () => {
-    loadTable(NEW_TASK)
+    let display = true
+    modalToggle(display)
 }
