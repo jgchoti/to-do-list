@@ -22,8 +22,7 @@ In addition to the core functionalities, I explored the following additional
 features:
 
 - **Local Storage:** Implemented the use of localhost to allow users to save
-  their to-do list locally. This feature enables users to reset, rewrite, and
-  add more information to their list conveniently.
+  their to-do list locally.
 
 ## What I have learned during this project
 
