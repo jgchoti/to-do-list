@@ -1,13 +1,14 @@
 export const styleChange = (element, isChecked) => {
-    if (element.textContent.startsWith("DONE:")) {
-        const newText = `<strong>${element.textContent.substring(0, 6)}</strong>${element.textContent.substring(6)}`;
-        element.innerHTML = newText;
-    }
+    const textEl = element.firstElementChild
     if (isChecked) {
-        element.classList.add('checked-label');
-        element.firstElementChild.setAttribute('contenteditable', 'false');
+        textEl.classList.add('checked-label');
+        textEl.setAttribute('contenteditable', 'false');
+        if (textEl.textContent.startsWith("DONE:")) {
+            const newText = `<strong>${textEl.textContent.substring(0, 6)}</strong>${textEl.textContent.substring(6)}`;
+            textEl.innerHTML = newText;
+        }
     } else {
-        element.classList.remove('checked-label');
-        element.firstElementChild.setAttribute('contenteditable', 'true');
+        textEl.classList.remove('checked-label');
+        textEl.setAttribute('contenteditable', 'true');
     }
 }
