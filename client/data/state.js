@@ -1,3 +1,10 @@
-export const state = {
-};
+export const state =
+    [
+        {
+            'status': false,
+            'task': 'Click to Edit',
+            'due': '',
+            'remove': ''
+        }
+    ]
 
