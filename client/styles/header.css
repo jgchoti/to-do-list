@@ -1,5 +1,3 @@
-@import url('./constants.css');
-
 h1 {
 	color: var(--font-color);
 	font-family: var(--font-family-head);
