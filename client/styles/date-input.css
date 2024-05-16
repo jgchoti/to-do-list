@@ -1,0 +1,13 @@
+input[type='date'] {
+	border: none;
+	border-bottom: 2px solid var(--font-color);
+	background-color: transparent;
+	color: var(--font-color);
+	width: 105px;
+}
+@media only screen and (max-width: 600px) {
+	#due-id,
+	.due {
+		display: none;
+	}
+}
