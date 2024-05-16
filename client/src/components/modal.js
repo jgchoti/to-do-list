@@ -14,6 +14,7 @@ export const modal = () => {
         el.type = element['type']
         el.id = element['id']
         el.className = element['className']
+        el.value = element['value']
         const brEl = document.createElement('br')
         formEl.appendChild(pEL)
         formEl.appendChild(el)
