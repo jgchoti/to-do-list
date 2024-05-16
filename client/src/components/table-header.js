@@ -1,11 +1,7 @@
-
 import { TABLE_HEAD_ID } from "../../data/constants.js"
-import { TABLE_CONTAINER_ID } from "../../data/constants.js"
 
 export const tableHeader = () => {
-    const container = document.getElementById('root')
-    const tableContainer = document.createElement('div')
-    tableContainer.id = TABLE_CONTAINER_ID
+    const listContainer = document.getElementById('table-container')
     const tableEl = document.createElement('table')
     const theadEl = document.createElement('thead')
     const tbodyEl = document.createElement('tbody')
@@ -18,7 +14,6 @@ export const tableHeader = () => {
     }
     tableEl.appendChild(theadEl)
     tableEl.appendChild(tbodyEl)
-    tableContainer.appendChild(tableEl)
-    container.appendChild(tableContainer)
-    return tableContainer
+    listContainer.appendChild(tableEl)
+    return listContainer
 }
