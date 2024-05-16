@@ -7,7 +7,7 @@ export const modalToggle = (display) => {
     } else {
         modal.style.display = 'none';
         rootDivEl.classList.remove('overlay')
-        document.getElementById('textInput').value = ''
+        document.getElementById('textInput').value = 'Edit Task'
         document.getElementById('dateInput').value = ''
     }
 }
