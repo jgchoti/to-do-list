@@ -55,7 +55,7 @@ export const BUTTONS = {
 
 
 export const MODAL_BUTTONS = {
-    'modal-add': '<i class="fa-solid fa-plus"></i>',
+    'modal-add': '<i class="fa-solid fa-check"></i>',
     'modal-cancel': '<i class="fa-solid fa-xmark"></i>'
 };
 
@@ -79,6 +79,7 @@ export const INPUT_MODAL = [
         type: "text",
         className: "form-modal",
         id: "textInput",
+        value: 'Edit Task'
 
     }, {
         element: 'input',
@@ -86,6 +87,6 @@ export const INPUT_MODAL = [
         type: "date",
         className: "form-modal",
         id: "dateInput",
-
+        value: ''
     },
 ]
