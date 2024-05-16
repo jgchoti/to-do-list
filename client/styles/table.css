@@ -1,5 +1,3 @@
-@import url('./constants.css');
-
 table {
 	border-collapse: collapse;
 }
@@ -58,6 +56,16 @@ tr {
 }
 
 @media only screen and (max-width: 600px) {
+	thead #status-id {
+		padding-left: 12px;
+	}
+
+	thead #remove-id {
+		padding-right: 12px;
+	}
+	th {
+		font-size: 16px;
+	}
 	th,
 	td {
 		padding: 2px;
@@ -70,9 +78,5 @@ tr {
 	}
 	tr {
 		font-size: 14px;
-	}
-	#due-id,
-	.due {
-		display: none;
 	}
 }
