@@ -15,6 +15,7 @@ export const TABLE_HEAD_ID = {
 }
 
 export const TABLE_CONTAINER_ID = 'table-container'
+export const LIST_CONTAINER_ID = 'list-container'
 export const NEW_LIST_ID = 'new-list'
 export const SAVE_BTN_ID = 'save-btn'
 export const RESET_BTN_ID = 'reset-btn'
@@ -63,10 +64,7 @@ export const MODAL_BUTTONS = {
 export const BUTTONS_HANDLERS = {
     'new-list': newListHandlers,
     'save-btn': saveList,
-    'reset-btn': reset
-};
-
-export const MODAL_BUTTONS_HANDLERS = {
+    'reset-btn': reset,
     'modal-add': modalTaskHandler,
     'modal-cancel': modalCancelHandler,
 };
