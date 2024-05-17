@@ -4,18 +4,18 @@ import { modalToggle } from './modal-toggle.js';
 import { saveList } from './save-list.js';
 
 export const modalTaskHandler = () => {
-	const taskInput = document.getElementById('textInput').value;
-	const dateInput = document.getElementById('dateInput').value;
-	const newTask = {
-		status: false,
-		task: taskInput,
-		due: dateInput,
-		remove: '',
-	};
-	state.pop();
-	state.push(newTask);
+  const taskInput = document.getElementById('textInput').value;
+  const dateInput = document.getElementById('dateInput').value;
+  const newTask = {
+    status: false,
+    task: taskInput,
+    due: dateInput,
+    remove: '',
+  };
+  state.pop();
+  state.push(newTask);
 
-	renderTable(state);
-	modalToggle(false);
-	saveList();
+  renderTable(state);
+  modalToggle(false);
+  saveList();
 };
