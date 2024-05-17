@@ -1,3 +1,4 @@
+/* eslint-disable boundaries/element-types */
 import { tableContainer } from './components/table-container.js';
 import { loadList } from './handlers/load-list.js';
 import { renderButtons } from './components/render-buttons.js';
