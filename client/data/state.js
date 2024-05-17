@@ -1,10 +1,8 @@
-export const state =
-    [
-        {
-            'status': false,
-            'task': 'Click to Edit',
-            'due': '',
-            'remove': ''
-        }
-    ]
-
+export const state = [
+	{
+		status: false,
+		task: 'Click to Edit',
+		due: '',
+		remove: '',
+	},
+];

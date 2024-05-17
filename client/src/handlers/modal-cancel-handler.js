@@ -1,5 +1,5 @@
-import { modalToggle } from "./modal-toggle.js";
+import { modalToggle } from './modal-toggle.js';
 
 export const modalCancelHandler = () => {
-    modalToggle(false);
+	modalToggle(false);
 };

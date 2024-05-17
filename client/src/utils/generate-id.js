@@ -1,6 +1,5 @@
-let index = 0
+let index = 0;
 
 export const generateID = () => {
-    return `task-${index++}`
-}
-
+	return `task-${index++}`;
+};
