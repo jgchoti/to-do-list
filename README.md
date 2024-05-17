@@ -1,8 +1,7 @@
 # To-Do List Project
 
-Welcome to the To-Do List project! This application was developed as part of my
-studies with HackYourFuture Belgium, aimed at deepening my understanding of
-JavaScript.
+This application was developed as part of my studies with HackYourFuture Belgium, 
+aimed at deepening my understanding of JavaScript.
 
 ![screenshot](./client/public/Screenshot.png)
 
