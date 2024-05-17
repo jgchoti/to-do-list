@@ -28,7 +28,7 @@ features:
 - **JavaScript Fundamentals:** such as event handling and DOM manipulation.
 - **Separation of Concerns:** Implemented a well-organized code structure,
   separating UI and logic to enhance maintainability.
-- **Debugging:** through debugging and resolving issues encountered during
+- **Debugging:** debugging and resolving issues encountered during
   development.
 
 ## Future Development Goals
