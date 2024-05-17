@@ -1,8 +1,8 @@
 export const state = [
-  {
-    status: false,
-    task: 'Click to Edit',
-    due: '',
-    remove: '',
-  },
+	{
+		status: false,
+		task: 'Click to Edit',
+		due: '',
+		remove: '',
+	},
 ];
