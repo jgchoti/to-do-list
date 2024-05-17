@@ -40,7 +40,7 @@ button#modal-cancel {
 }
 
 button.remove-btn {
-	padding: 0px auto;
+	padding: 0 auto;
 	font-size: 14px;
 	text-align: center;
 }

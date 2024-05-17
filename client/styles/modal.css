@@ -6,7 +6,7 @@ div #modal-body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: var(--shadow-color);
-	padding: 0px 30px 14px;
+	padding: 0 30px 14px;
 	background-color: var(--table-color-dark);
 	width: 350px;
 	border-radius: 35px;
@@ -17,6 +17,7 @@ div #modal-body {
 form {
 	margin: 0 10px;
 }
+
 form p,
 .form-modal {
 	display: inline-block;
@@ -54,18 +55,19 @@ form p {
 }
 
 @media only screen and (max-width: 600px) {
-	div #modal-body {
-		top: 30%;
-		width: 300px;
-	}
-	form {
-		max-width: 100%;
-	}
-	div #modal-body {
-		padding: 0px 2px 14px;
-	}
 	#textInput,
 	#dateInput {
 		width: 250px;
 	}
+
+	div #modal-body {
+		top: 30%;
+		width: 300px;
+		padding: 0 2px 14px;
+	}
+
+	form {
+		max-width: 100%;
+	}
+
 }

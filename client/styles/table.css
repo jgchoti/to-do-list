@@ -1,6 +1,7 @@
 table {
 	border-collapse: collapse;
 }
+
 thead #status-id {
 	border-top-left-radius: 10px;
 }
@@ -30,12 +31,12 @@ td {
 	font-family: var(--font-family-text);
 }
 
-tr:nth-child(even) {
-	background-color: var(--table-color-dark);
-}
-
 tr {
 	background-color: var(--table-color);
+}
+
+tr:nth-child(even) {
+	background-color: var(--table-color-dark);
 }
 
 .status,
@@ -63,20 +64,24 @@ tr {
 	thead #remove-id {
 		padding-right: 12px;
 	}
+
 	th {
 		font-size: 16px;
 	}
+
 	th,
 	td {
 		padding: 2px;
 	}
+
+	tr {
+		font-size: 14px;
+	}
+
 	#table-container {
 		padding: 10px;
 		margin: 30px auto;
 		border-radius: 35px;
 		box-shadow: 5px 10px var(--shadow-color);
-	}
-	tr {
-		font-size: 14px;
 	}
 }

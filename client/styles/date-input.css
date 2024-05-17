@@ -5,6 +5,7 @@ input[type='date'] {
 	color: var(--font-color);
 	width: 105px;
 }
+
 @media only screen and (max-width: 600px) {
 	#due-id,
 	.due {
