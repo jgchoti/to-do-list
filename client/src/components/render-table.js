@@ -8,7 +8,7 @@ import { checkedListeners } from "../listeners/checked-listeners.js";
 import { styleChange } from "../utils/style-change.js";
 
 
-export const loadTable = (list) => {
+export const renderTable = (list) => {
     const tbodyEl = document.getElementById('todo-table');
 
     for (let i = 0; i < list.length; i++) {
