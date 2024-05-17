@@ -60,7 +60,8 @@
 		"eslint:recommended",
 		"airbnb-base",
 		"plugin:boundaries/strict",
-		"plugin:sonarjs/recommended"
+		"plugin:sonarjs/recommended",
+		"prettier"
 	],
 	"rules": {
 		"no-var": 1,
@@ -214,4 +215,5 @@
 		],
 		"boundaries/ignore": ["**/*.spec.js", "**/sandbox.js"]
 	}
+	
 }
