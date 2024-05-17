@@ -1,5 +1,6 @@
 import { modalToggle } from './modal-toggle.js';
+
 export const newListHandlers = () => {
-	let display = true;
+	const display = true;
 	modalToggle(display);
 };
