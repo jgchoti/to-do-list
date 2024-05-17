@@ -1,5 +1,3 @@
-
-
 export const saveList = () => {
 
     const table = document.getElementById("todo-table");
